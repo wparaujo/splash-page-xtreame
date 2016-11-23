@@ -1,5 +1,6 @@
 require 'sinatra'
 require 'pony'
+require 'mongoid'
 
 get '/' do
 	erb :home

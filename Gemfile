@@ -1,2 +1,5 @@
 source 'https://rubygems.org'
 gem 'pony'
+gem 'sinatra'
+gem 'mongoid', '~> 6.0.0'
+gem 'mongo'
