@@ -18,7 +18,7 @@ post '/send-email' do
 						:body => 'Obrigado!',
 						:via => :smtp,
 						:via_options => {
-							:address              => 'smtp.sendgrid.com',
+							:address              => 'smtp.sendgrid.net',
 							:port                 => '587',
 							:enable_starttls_auto => true,
 							:user_name            => ENV['SENDGRID_USERNAME'],
