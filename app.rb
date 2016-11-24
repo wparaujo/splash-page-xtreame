@@ -13,9 +13,9 @@ post '/send-email' do
 	# @user.save
 
 	Pony.mail :to => params[:email],
-						:from => 'wesley.sickert@gmail.com',
+						:from => 'noreply',
 						:subject => 'Você agora é prioridade!',
-						:body => 'Obrigado!',
+						:body => erb :email,
 						:via => :smtp,
 						:via_options => {
 							:address              => 'smtp.sendgrid.net',
