@@ -9,8 +9,8 @@ get '/' do
 end
 
 post '/send-email' do
-	@user = User.new name: params[:name], email: params[:email]
-	@user.save
+	# @user = User.new name: params[:name], email: params[:email]
+	# @user.save
 
 	Pony.mail :to => params[:email],
 						:from => 'wesley.sickert@gmail.com',
